@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="5dp"
+    app:cardCornerRadius="14dp"
+    android:layout_margin="5dp"
+    android:id="@+id/cardView"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+        <TextView
+            android:id="@+id/EmpName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Emp Name"
+            android:textSize="15sp"
+            android:layout_margin="5dp"
+            android:textStyle="bold"
+            android:layout_gravity="center"/>
+    <TextView
+        android:id="@+id/EmpId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Emp Id"
+        android:textSize="15sp"
+        android:layout_margin="5dp"
+        android:textStyle="bold"
+        android:layout_gravity="center"/>
+    <TextView
+        android:id="@+id/EmpMobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Emp Mobile"
+        android:textSize="15sp"
+        android:layout_margin="5dp"
+        android:textStyle="bold"
+        android:layout_gravity="center"/>
+    <TextView
+        android:id="@+id/EmpGender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Emp Gender"
+        android:textSize="15sp"
+        android:layout_margin="5dp"
+        android:textStyle="bold"
+        android:layout_gravity="center"/>
+</LinearLayout>
+</androidx.cardview.widget.CardView>
+

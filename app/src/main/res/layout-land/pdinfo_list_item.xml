@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardElevation="4dp"
+    app:cardCornerRadius="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <!-- Content goes here -->
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="24dp"
+            android:paddingEnd="16dp"
+            android:paddingStart="16dp"
+            android:paddingBottom="6dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/til_shift"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="@string/Shift"
+                    android:layout_margin="1dp"
+                    app:errorIconTint="@android:color/darker_gray"
+                    app:boxStrokeErrorColor="@android:color/darker_gray">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/atv_shift"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:inputType="none"
+                        android:fontFamily="@font/raleway_medium"
+                        android:paddingBottom="16sp"
+                        android:paddingTop="16sp"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/til_nozal"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="1dp"
+                    android:hint="@string/nozal"
+                    app:errorIconTint="@android:color/darker_gray"
+                    app:boxStrokeErrorColor="@android:color/darker_gray">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/atv_nozal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:inputType="none"
+                        android:fontFamily="@font/raleway_medium"
+                        android:paddingBottom="16sp"
+                        android:paddingTop="16sp"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/til_closing_meter"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="1dp"
+                    android:hint="Closing Meter"
+                    app:errorIconTint="@android:color/darker_gray"
+                    app:boxStrokeErrorColor="@android:color/darker_gray">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/tiet_closing_meter"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:maxLength="10"
+                        android:fontFamily="@font/raleway_medium"
+                        android:inputType="number"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/til_opening_meter"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="1dp"
+                    android:hint="Opening Meter"
+                    app:errorIconTint="@android:color/darker_gray"
+                    app:boxStrokeErrorColor="@android:color/darker_gray">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/tiet_opening_meter"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:maxLength="10"
+                        android:fontFamily="@font/raleway_medium"
+                        android:inputType="number"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/til_total_litre"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="1dp"
+                    android:hint="Total Litre"
+                    app:errorIconTint="@android:color/darker_gray"
+                    app:boxStrokeErrorColor="@android:color/darker_gray">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/tiet_total_litre"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:maxLength="10"
+                        android:fontFamily="@font/raleway_medium"
+                        android:inputType="number"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/til_testing"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="1dp"
+                    android:hint="Testing"
+                    app:errorIconTint="@android:color/darker_gray"
+                    app:boxStrokeErrorColor="@android:color/darker_gray">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/tiet_testing"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:maxLength="10"
+                        android:fontFamily="@font/raleway_medium"
+                        android:inputType="number"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/til_total"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="1dp"
+                    android:hint="Total"
+                    app:errorIconTint="@android:color/darker_gray"
+                    app:boxStrokeErrorColor="@android:color/darker_gray">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/tiet_total"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:maxLength="10"
+                        android:fontFamily="@font/raleway_medium"
+                        android:inputType="number"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/til_rate"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="1dp"
+                    android:hint="Rate"
+                    app:errorIconTint="@android:color/darker_gray"
+                    app:boxStrokeErrorColor="@android:color/darker_gray">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/tiet_rate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:maxLength="10"
+                        android:fontFamily="@font/raleway_medium"
+                        android:inputType="number"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/til_total_amount"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="1dp"
+                    android:hint="Total Amount"
+                    app:errorIconTint="@android:color/darker_gray"
+                    app:boxStrokeErrorColor="@android:color/darker_gray">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/tiet_total_amount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:maxLength="10"
+                        android:fontFamily="@font/raleway_medium"
+                        android:inputType="number"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <!-- Save and Cancel buttons -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:orientation="horizontal">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/button_save"
+                    style="@style/Widget.MaterialComponents.Button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:fontFamily="@font/raleway_medium"
+                    android:padding="12dp"
+                    android:text="Save" />
+
+                <com.google.android.material.button.MaterialButton
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:id="@+id/button_clear"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:fontFamily="@font/raleway_medium"
+                    android:padding="12dp"
+                    android:text="Clear"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/actionLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:orientation="horizontal"
+            android:visibility="visible"
+            android:paddingEnd="8dp"
+            android:paddingTop="2dp">
+
+            <ImageButton
+                android:id="@+id/editButton"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/ic_edit"
+                android:layout_marginEnd="8dp"/>
+
+            <ImageButton
+                android:id="@+id/deleteButton"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/ic_delete"/>
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

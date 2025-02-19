@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="pd_info_step">P/D Info</string>
+    <string name="credit_info_step">Credit Info</string>
+    <string name="other_credit_info_step">Other Credit Info</string>
+    <string name="bank_paid_step">Bank Paid</string>
+</resources>

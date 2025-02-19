@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Petrol_Pump</string>
+    <string name="Machine_label">machine</string>
+    <string name="Product_label">product</string>
+
+    <!-- to toggle the open close button of the navigation drawer -->
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
+
+    <array name="details">
+        <item>P/D Details</item>
+        <item>Credit info</item>
+        <item>Others Credit info</item>
+    </array>
+    <string name="Next">Next</string>
+    <string name="Shift">Shift</string>
+    <string name="nozal">Nozal</string>
+    <string name="Cl_Mtr">CL Mtr</string>
+    <string name="Op_Mtr">Op_mtr</string>
+    <string name="total_mtr">Total_Mtr</string>
+    <string name="testing">Testing</string>
+    <string name="total">Total</string>
+    <string name="rate">Rate</string>
+    <string name="total_amount">Total Amount</string>
+    <string name="customer">Customer</string>
+    <string name="bill_no">Bill NO</string>
+    <string name="vehical_no">Vehical_No</string>
+    <string name="item">Item</string>
+    <string name="ctn_rate">Rate</string>
+    <string name="ctn_Qty">Qty</string>
+    <string name="ctn_Total">Total</string>
+    <string name="account">Account</string>
+    <string name="amount">Amount</string>
+    <string name="narriation">Narriation</string>
+    <string name="pd_info_step">P/D Info</string>
+    <string name="credit_info_step">Credit Info</string>
+    <string name="other_credit_info_step">Other Credit Info</string>
+    <string name="bank_paid_step">Bank Paid</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

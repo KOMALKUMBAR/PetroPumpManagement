@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="selected_step">
+        <enum name="first" value="1" />
+        <enum name="second" value="2" />
+        <enum name="third" value="3" />
+        <enum name="fourth" value="4" />
+    </attr>
+
+    <declare-styleable name="CustomStepperView">
+        <attr name="selected_step" />
+    </declare-styleable>
+
+</resources>

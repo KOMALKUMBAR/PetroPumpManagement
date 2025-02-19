@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Add_NozalMasterActivity">
+    <ImageView
+        android:id="@+id/AddNozalMasterbackbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:src="@drawable/baseline_arrow_back_24"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NOZAL INFORMATION"
+        android:layout_gravity="center"
+        android:textStyle="normal"
+        android:fontFamily="sans-serif"
+        android:textSize="16dp"
+        android:layout_margin="30dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+    android:layout_margin="15dp">
+        <AutoCompleteTextView
+        android:id="@+id/MachineName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:inputType="none"
+        android:paddingBottom="16sp"
+        android:paddingTop="16sp"
+        android:text="Machine name"
+        android:hint="@string/Machine_label" />
+</com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nozal"
+            android:id="@+id/Nozal">
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_margin="15dp">
+        <AutoCompleteTextView
+            android:id="@+id/autoproduct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:inputType="none"
+            android:paddingBottom="16sp"
+            android:paddingTop="16sp"
+            android:text="Product"
+            android:hint="@string/Product_label" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rectangle_button"
+        android:text="save"
+        android:textSize="18dp"/>
+</LinearLayout>
+

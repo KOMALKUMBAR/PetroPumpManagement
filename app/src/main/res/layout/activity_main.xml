@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <!-- ImageView for the app icon or related image -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="320dp"
+        android:layout_margin="10dp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/petrol5" />
+
+    <!-- TextView for the LOGIN title -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="LOGIN"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <!-- Username TextInputLayout with start icon -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+    app:endIconDrawable="@drawable/baseline_account_circle_24"
+    app:endIconMode="custom">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:textStyle="bold" />
+</com.google.android.material.textfield.TextInputLayout>
+
+
+    <!-- Password TextInputLayout with start icon and password toggle -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:endIconMode="password_toggle">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:textStyle="bold"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Button for login -->
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Login"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:background="@drawable/rectangle_button"
+        android:textStyle="bold" />
+</LinearLayout>
