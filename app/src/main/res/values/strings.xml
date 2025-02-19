@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Petrol_Pump</string>
-    <string name="Machine_label">machine</string>
+    <string name="Machine_label">Account Type</string>
     <string name="Product_label">product</string>
 
     <!-- to toggle the open close button of the navigation drawer -->
     <string name="nav_open">Open</string>
-    <string name="nav_close">Close</string>
+    <string name="nav_close">Close</string>f
 
     <array name="details">
         <item>P/D Details</item>

@@ -1,9 +1,11 @@
-package com.android1.petrol_pump
+package com.android1.petrol_pump.Activity
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageView
+import androidx.appcompat.app.AppCompatActivity
+import com.android1.petrol_pump.R
+import com.android1.petrol_pump.SubActivity.AddAccountActivity
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 class AccountActivity : AppCompatActivity() {
@@ -13,13 +15,13 @@ class AccountActivity : AppCompatActivity() {
         setContentView(R.layout.activity_account)
         val fabAddAccount = findViewById<FloatingActionButton>(R.id.fabAddAccount)
         fabAddAccount.setOnClickListener(){
-            val intent = Intent(this,Add_AccountActivity::class.java)
+            val intent = Intent(this, AddAccountActivity::class.java)
             startActivity(intent)
         }
         //back buttton
-        var btnBack =findViewById<ImageView>(R.id.backbtn)
+        var btnBack =findViewById<ImageView>(R.id.ivBack)
         btnBack.setOnClickListener(){
-            val i=Intent(this,HomeActivity::class.java)
+            val i=Intent(this, HomeActivity::class.java)
             startActivity(i)
         }
 

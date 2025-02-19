@@ -1,13 +1,16 @@
-package com.android1.petrol_pump
+package com.android1.petrol_pump.Activity
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.ImageView
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.android1.petrol_pump.ApiInterfaceModel.ApiInterface
+import com.android1.petrol_pump.Mydata
+import com.android1.petrol_pump.R
+import com.android1.petrol_pump.SubActivity.AddEmployeeActivity
 import com.android1.petrol_pump.ui.bill_invoice.adapter.EmployeAdapter
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import retrofit2.Call
@@ -25,12 +28,12 @@ class EmployeeActivity : AppCompatActivity() {
         setContentView(R.layout.activity_employee)
         val fabAdd = findViewById<FloatingActionButton>(R.id.fabAdd)
         fabAdd.setOnClickListener(){
-            val i=Intent(this,Add_EmployeeActivity::class.java)
+            val i=Intent(this, AddEmployeeActivity::class.java)
         startActivity(i)}
         //back buttton
-        var btnBack =findViewById<ImageView>(R.id.backbtn)
+        var btnBack =findViewById<ImageView>(R.id.ivBack)
         btnBack.setOnClickListener(){
-            val i=Intent(this,HomeActivity::class.java)
+            val i=Intent(this, HomeActivity::class.java)
             startActivity(i)
         }
 

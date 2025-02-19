@@ -6,24 +6,32 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".AddEmployee">
-    <ImageView
-        android:id="@+id/AddEmploybackbtn"
-        android:layout_width="wrap_content"
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="10dp"
-        android:src="@drawable/baseline_arrow_back_24"/>
+        android:background="?attr/colorPrimary"
+        android:popupTheme="@style/ThemeOverlay.AppCompat.Light">
 
+        <!-- Back Button -->
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_arrow_back_24"
+            android:padding="10dp"
+            android:contentDescription="Back Button"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="EMPOYEE_INFORMATION..."
-        android:layout_gravity="center"
-        android:textStyle="bold"
-        android:textSize="16dp"
-        android:layout_margin="30dp"
-        />
-
+        <!-- Toolbar Title -->
+        <TextView
+            android:id="@+id/toolbarTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EMPOYEE INFORMATION"
+            android:textSize="20sp"
+            android:textColor="@android:color/white" />
+    </androidx.appcompat.widget.Toolbar>
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"

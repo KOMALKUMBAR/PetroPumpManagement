@@ -1,7 +1,6 @@
-package com.android1.petrol_pump
+package com.android1.petrol_pump.SubActivity
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
@@ -9,16 +8,19 @@ import android.widget.AutoCompleteTextView
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
+import com.android1.petrol_pump.Activity.NozalMasterActivity
+import com.android1.petrol_pump.R
 import com.google.android.material.textfield.TextInputEditText
 
-class Add_NozalMasterActivity : AppCompatActivity() {
+class AddNozalMasterActivity : AppCompatActivity() {
     lateinit var autoCompleteTextView: AutoCompleteTextView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_add_nozal)
-        val AddNozalMasterbackbtn =findViewById<ImageView>(R.id.AddNozalMasterbackbtn)
+        val AddNozalMasterbackbtn =findViewById<ImageView>(R.id.ivBack)
         AddNozalMasterbackbtn.setOnClickListener() {
-            val i = Intent(this,Nozal_MasterActivity::class.java)
+            val i = Intent(this, NozalMasterActivity::class.java)
             startActivity(i)
         }
         val items = listOf("Machine No1", "Machine No2")

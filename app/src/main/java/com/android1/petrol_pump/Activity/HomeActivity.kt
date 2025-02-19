@@ -1,9 +1,11 @@
-package com.android1.petrol_pump
+package com.android1.petrol_pump.Activity
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.ImageView
+import androidx.appcompat.app.AppCompatActivity
 import androidx.cardview.widget.CardView
+import com.android1.petrol_pump.R
 import com.android1.petrol_pump.ui.bill_invoice.UpdatedBillInvoiceActivity
 
 class HomeActivity : AppCompatActivity() {
@@ -11,6 +13,12 @@ class HomeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
+        var btnBack =findViewById<ImageView>(R.id.ivBack)
+        btnBack.setOnClickListener(){
+            val i=Intent(this, LoginActivity::class.java)
+            startActivity(i)
+        }
+
 
         val Emaster = findViewById<CardView>(R.id.Emaster)
         Emaster.setOnClickListener() {
@@ -20,19 +28,19 @@ class HomeActivity : AppCompatActivity() {
         val itemMaster=findViewById<CardView>(R.id.itemaster)
         itemMaster.setOnClickListener()
         {
-            val intent =Intent(this,Item_MasterActivity::class.java)
+            val intent =Intent(this, Item_MasterActivity::class.java)
             startActivity(intent)
         }
        val Nmaster =findViewById<CardView>(R.id.Nmaster)
         Nmaster.setOnClickListener(){
-            val intent1 =Intent(this,Nozal_MasterActivity::class.java)
+            val intent1 =Intent(this, NozalMasterActivity::class.java)
             startActivity(intent1)
         }
 
         val account=findViewById<CardView>(R.id.account)
         account.setOnClickListener()
         {
-            val intent2=Intent(this,AccountActivity::class.java)
+            val intent2=Intent(this, AccountActivity::class.java)
             startActivity(intent2)
         }
         val cvBillInvoice=findViewById<CardView>(R.id.cvBillInvoice)

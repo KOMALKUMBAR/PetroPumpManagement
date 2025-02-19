@@ -4,7 +4,34 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Nozal_MasterActivity">
+    tools:context=".Activity.NozalMasterActivity">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <!-- Back Button -->
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_arrow_back_24"
+            android:padding="10dp"
+            android:contentDescription="Back Button"/>
+
+        <!-- Toolbar Title -->
+        <TextView
+            android:id="@+id/toolbarTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nozal Master"
+            android:textSize="22sp"
+            android:textColor="@android:color/white" />
+    </androidx.appcompat.widget.Toolbar>
 
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -20,12 +47,6 @@
         android:layout_alignParentEnd="true"
         tools:ignore="SpeakableTextPresentCheck"
         android:backgroundTint="#BCD3CE" />
-    <ImageView
-        android:id="@+id/backbtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="10dp"
-        android:src="@drawable/baseline_arrow_back_24"/>
 
 
 </RelativeLayout>

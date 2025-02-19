@@ -24,27 +24,27 @@
             android:exported="false"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".Add_AccountActivity"
+            android:name=".SubActivity.AddAccountActivity"
             android:exported="false"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".AccountActivity"
+            android:name=".Activity.AccountActivity"
             android:exported="false"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".Add_NozalMasterActivity"
+            android:name=".SubActivity.AddNozalMasterActivity"
             android:exported="false"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".Nozal_MasterActivity"
+            android:name=".Activity.NozalMasterActivity"
             android:exported="false"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".Add_ItemMasterActivity"
+            android:name=".SubActivity.AddItemMasterActivity"
             android:exported="false"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".Item_MasterActivity"
+            android:name=".Activity.Item_MasterActivity"
             android:exported="false"
             android:screenOrientation="portrait"/>
         <activity
@@ -56,19 +56,19 @@
             android:exported="false"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".Add_EmployeeActivity"
+            android:name=".SubActivity.AddEmployeeActivity"
             android:exported="false"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".EmployeeActivity"
+            android:name=".Activity.EmployeeActivity"
             android:exported="false"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".HomeActivity"
+            android:name=".Activity.HomeActivity"
             android:exported="false"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".MainActivity"
+            android:name=".Activity.LoginActivity"
             android:exported="true"
             android:screenOrientation="portrait">
             <intent-filter>
