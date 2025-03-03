@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "992080259979",
+    "project_id": "petrolpumpproject-73c0f",
+    "storage_bucket": "petrolpumpproject-73c0f.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:992080259979:android:73acf37b5d8ff066375d8e",
+        "android_client_info": {
+          "package_name": "com.android1.petrol_pump"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCsrp_Hhvjg1ZEongqICJuK2-s9GBqIaSo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
