@@ -45,7 +45,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Item Name"
-            android:id="@+id/itemName">
+            android:id="@+id/etItemName">
         </com.google.android.material.textfield.TextInputEditText>
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -58,8 +58,8 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Prize"
-            android:id="@+id/Prize">
+            android:hint="Price"
+            android:id="@+id/etPrice">
         </com.google.android.material.textfield.TextInputEditText>
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -73,12 +73,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Purchase Rate"
-            android:id="@+id/PRate">
+            android:id="@+id/etPurchaseRate">
         </com.google.android.material.textfield.TextInputEditText>
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
-        android:id="@+id/save"
+        android:id="@+id/btnSubmit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -87,6 +87,7 @@
         android:layout_marginTop="10dp"
         android:background="@drawable/rectangle_button"
         android:text="save"
+        android:textColor="@color/custom_grey"
         android:textSize="18dp"/>
 
 </LinearLayout>

@@ -47,14 +47,7 @@
             android:name=".Activity.Item_MasterActivity"
             android:exported="false"
             android:screenOrientation="portrait"/>
-        <activity
-            android:name=".addItemaster"
-            android:exported="false"
-            android:screenOrientation="portrait"/>
-        <activity
-            android:name=".Imaster"
-            android:exported="false"
-            android:screenOrientation="portrait"/>
+
         <activity
             android:name=".SubActivity.AddEmployeeActivity"
             android:exported="false"

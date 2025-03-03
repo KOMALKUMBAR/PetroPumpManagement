@@ -3,22 +3,26 @@ package com.android1.petrol_pump.Activity
 import android.content.Intent
 import android.os.Bundle
 import android.widget.ImageView
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.cardview.widget.CardView
 import com.android1.petrol_pump.R
 import com.android1.petrol_pump.ui.bill_invoice.UpdatedBillInvoiceActivity
+import com.google.firebase.auth.FirebaseAuth
 
 class HomeActivity : AppCompatActivity() {
     lateinit var cardView: CardView
+    private lateinit var auth: FirebaseAuth
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
-        var btnBack =findViewById<ImageView>(R.id.ivBack)
-        btnBack.setOnClickListener(){
-            val i=Intent(this, LoginActivity::class.java)
+        var btnBack = findViewById<ImageView>(R.id.ivBack)
+        btnBack.setOnClickListener() {
+            val i = Intent(this, LoginActivity::class.java)
             startActivity(i)
         }
-
+        auth = FirebaseAuth.getInstance()
 
         val Emaster = findViewById<CardView>(R.id.Emaster)
         Emaster.setOnClickListener() {
